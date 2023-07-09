@@ -3,8 +3,8 @@
 }
 
 body {
+    height: 100%;
     background-color: white;
-    padding: 20px 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,18 +12,19 @@ header {
     padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(78, 84, 56);
+    border-bottom: 6px solid maroon;
 }
 
 h1 {
     display: inline-block;
     margin-left: 15px;
-    color: maroon;
+    color: white;
     font-size: 60px;
-    text-shadow: 5px 5px 1px black;
+    text-shadow: 5px 5px 1px maroon;
 }
 
 a   {
-    color: black;
+    color: white;
     text-decoration: solid underline 4px maroon;
 }
 
@@ -46,6 +47,7 @@ header nav li {
 }
 
 section {
+    border-left: 6px solid maroon;
     width: 75%;
     float: right;
     margin-right: 20px;
@@ -53,7 +55,11 @@ section {
 
 article {
     height: 300px;
-    padding: 50px;
+    padding: 40px;
+}
+
+p {
+    margin-right: 200px;
 }
 
 article h4 {
@@ -63,15 +69,28 @@ article h4 {
 
 article img {
     float: right;
-    max-height: 250px;
+    display: block;
+    margin-right: 10px;
+    max-height: 300px;
 }
 
 aside {
     float: left;
+    margin-top: 25px;
     margin-left: 20px;
     height: 500px;
+    width: 250px;
+    flex-direction: column;
+    
 }
 
 aside h2 {
+    font-size: 40px;
+    text-align: right;
     height: 300px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
 }
