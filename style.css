@@ -52,33 +52,48 @@ nav img {
     width: 100%;
 }
 
-section {
+main {
     border: 6px solid maroon;
     width: 75%;
+    height: 100%;
     float: right;
     margin-right: 20px;
 }
 
-article {
+section {
     height: 300px;
-
 }
 
-article h4 {
-    margin: none;
-    padding-top: 1px;
+.mywork {
+    display: grid;
+    grid-column-start: auto;
+    grid-template-columns: 20em 20em 20em;
+    grid-auto-rows: 100% 20em 20em;
+    grid-gap: 10px;
+}
+
+div img {
+    width: 33%;
+    height: 33%;
+}
+
+.mywork div {
+    background-color: red;
 }
 
 aside {
-    border: 6px maroon;
+    border: 6px solid maroon;
     width: 23%;
     float: left;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 aside h2 {
     font-size: 40px;
     text-align: right;
     height: 300px;
+}
+
+footer {
+
 }
