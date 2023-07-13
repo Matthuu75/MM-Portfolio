@@ -20,6 +20,10 @@ header {
     background-color: black
 }
 
+header img {
+    max-height: 150px;
+}
+
 h1 {
     display: flex;
     justify-content: flex-start;
@@ -72,7 +76,7 @@ nav h3 {
 }
 
 main {
-    width: 75%;
+    width: 90%;
     height: 100%;
     margin-right: 0px;
 }
@@ -101,12 +105,22 @@ section>div {
     padding-left: 10px;
 }
 
+.mypic {
+    display: block;
+    margin-left: 30%;
+    margin-right: 50%;
+    width: 25%;
+    border-radius: 250px;
+    border: 3px solid black;
+}    
+
 .mywork {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
 }
+
 /* GET BACK TO THIS */
 .mywork a {
     display: flex;
@@ -121,13 +135,16 @@ section>div {
     font-size: 16pt;
     text-decoration: none;
 }
+
 .mywork a:hover {
     opacity: 50%;
 }
+
 .mywork a:first-child {
-    min-height: 320px;
+    min-height: 350px;
     flex-basis: 100%;
 }
+
 .mywork div {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -164,4 +181,3 @@ section>div {
     background-size: cover;
     background-position: center;
 }
-
