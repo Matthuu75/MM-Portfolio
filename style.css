@@ -14,10 +14,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    min-height: 150px;
     padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(78, 84, 56);
+    background-color: black
 }
 
 h1 {
@@ -83,11 +83,13 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
-section>h2 {
-    flex-basis: 23%;
+section h2 {
+    width: 550px;
+    flex-basis: 21%;
     text-align: right;
     padding-right: 20px;
     border-right: 3px solid black;
@@ -105,7 +107,6 @@ section>div {
     justify-content: center;
 
 }
-
 /* GET BACK TO THIS */
 .mywork a {
     display: flex;
@@ -120,16 +121,13 @@ section>div {
     font-size: 16pt;
     text-decoration: none;
 }
-
 .mywork a:hover {
     opacity: 50%;
 }
-
 .mywork a:first-child {
     min-height: 320px;
     flex-basis: 100%;
 }
-
 .mywork div {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -167,7 +165,3 @@ section>div {
     background-position: center;
 }
 
-a img {
-    width: 33%;
-    height: 33%;
-}
