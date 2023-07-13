@@ -1,4 +1,4 @@
-*  {
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -18,7 +18,6 @@ header {
     padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(78, 84, 56);
-    border: 6px solid maroon;
 }
 
 h1 {
@@ -27,15 +26,16 @@ h1 {
     margin: 0px;
     padding: 0px;
     color: white;
-    font-size: 50px;
+    font-size: 50pt;
     text-shadow: 5px 5px 1px maroon;
 }
 
-header a   {
+header a {
     display: flex;
     justify-content: flex-end;
     color: white;
     text-decoration: solid underline 4px maroon;
+    font-size: 15pt;
 }
 
 header ul {
@@ -50,68 +50,124 @@ header li {
 }
 
 nav {
-    height: 225px;
-    color:;
+    height: 200px;
+    background-image: url(Assets/football\ field\ yard\ lines.jpeg);
+    filter: grayscale(45%);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 5px solid black;
 }
 
-nav img {
-    height: 100%;
-    width: 100%;
+nav h3 {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    max-width: 350px;
+    font-size: 30pt;
 }
 
 main {
-    border: 6px solid maroon;
     width: 75%;
     height: 100%;
-    float: right;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 section {
-    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+section>h2 {
+    flex-basis: 23%;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 3px solid black;
+    font-size: 36px;
+}
+
+section>div {
+    flex: 0 0 77%;
+    padding-left: 10px;
 }
 
 .mywork {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 /* GET BACK TO THIS */
 .mywork a {
     display: flex;
-    border: 3px solid black;
-    background-color: red;
+    border: 4px solid black;
+    background-color: white;
     min-height: 180px;
     max-height: 180px;
     flex-basis: calc(50% - 1em);
-    /* em vs rem */
     margin: 0.5em;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+.mywork a:hover {
+    opacity: 50%;
+}
+
+.mywork a:first-child {
+    min-height: 320px;
+    flex-basis: 100%;
+}
+
+.mywork div {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-left: 10px;
+    width: 150px;
+}
+
+.horiseon {
+    background-image: url(Assets/digital-marketing-meeting.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .football {
     background-image: url(Assets/miami\ field.jpeg);
     background-size: cover;
+    background-position: center;
+}
+
+.motorcycle {
+    background-image: url(Assets/motorcycle.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dogs {
+    background-image: url(Assets/dogs.jpeg);
+    background-size: cover;
+    background-position: center
+}
+
+.scotland {
+    background-image: url(Assets/scotland.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 a img {
     width: 33%;
     height: 33%;
-}
-
-aside {
-    border: 6px solid maroon;
-    width: 23%;
-    float: left;
-    flex-direction: column; 
-}
-
-aside h2 {
-    font-size: 40px;
-    text-align: right;
-    height: 300px;
-}
-
-footer {
-
 }
